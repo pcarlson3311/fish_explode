@@ -31,11 +31,11 @@ def make_background(surface):
 
 def add_enemies(enemies,num_enemeis):
     for _ in range(num_enemeis):
-        enemy = Enemy(random.randint(screen_width, screen_width + 20), random.randint(0, screen_height - 1.5 * Player_size))
+        enemy = Enemy(random.randint(screen_width, screen_width + 20), random.randint(0, screen_height - int(1.5 * Player_size)))
         enemies.add(enemy)
 def add_coins(coins,num_coins):
     for _ in range(num_coins):
-        coin = Coins(random.randint(screen_width, screen_width + 20), random.randint(0, screen_height - 1.5 * Player_size))
+        coin = Coins(random.randint(screen_width, screen_width + 20), random.randint(0, screen_height - int(1.5 * Player_size)))
         coins.add(coin)
 
 
