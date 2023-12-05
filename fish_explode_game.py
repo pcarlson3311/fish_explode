@@ -183,8 +183,8 @@ while running:
                     start_time = pygame.time.get_ticks()
                     pygame.mixer.music.play(-1)
                     enemies.empty()
-                    enemies.add(Enemy(random.randint(screen_width, screen_width + 20), random.randint(0, screen_height - 1.5 * Player_size)))
-                    enemies.add(Enemy(random.randint(screen_width, screen_width + 20), random.randint(0, screen_height - 1.5 * Player_size)))
+                    enemies.add(Enemy(random.randint(screen_width, screen_width + 20), random.randint(0, screen_height - int(1.5 * Player_size))))
+                    enemies.add(Enemy(random.randint(screen_width, screen_width + 20), random.randint(0, screen_height - int(1.5 * Player_size))))
 
             elif event.key == pygame.K_1:
                 reset_game_state()  # Restart the game when '1' is pressed
